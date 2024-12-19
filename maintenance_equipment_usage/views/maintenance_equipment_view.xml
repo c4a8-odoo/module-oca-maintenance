@@ -12,7 +12,7 @@
                 <span
                     groups="maintenance.group_equipment_manager"
                     class="label label-primary"
-                    attrs="{'invisible': [('in_use', '=', False)]}"
+                    invisible="not in_use"
                 >In use</span>
             </xpath>
         </field>
@@ -38,7 +38,7 @@
                 <span
                     groups="maintenance.group_equipment_manager"
                     class="label label-primary"
-                    attrs="{'invisible': [('in_use', '=', False)]}"
+                    invisible="not in_use"
                 >In use</span>
             </xpath>
         </field>

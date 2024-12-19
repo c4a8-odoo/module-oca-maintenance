@@ -11,19 +11,17 @@ class TestMaintenanceEquipmentUsage(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.user = new_test_user(
-            cls.env,
-            login="test_basic_user",
-        )
+        cls.user = new_test_user(cls.env, login="test_basic_user")
         cls.equipment = cls.env["maintenance.equipment"].create(
             {"name": "Test equipment"}
         )
-        cls.equipment_usage = cls._create_equipment_usage(cls)
+        cls.equipment_usage = cls._create_equipment_usage()
 
-    def _create_equipment_usage(self):
-        equipment_usage_form = Form(self.env["maintenance.equipment.usage"])
-        equipment_usage_form.equipment_id = self.equipment
-        equipment_usage_form.user_id = self.user
+    @classmethod
+    def _create_equipment_usage(cls):
+        equipment_usage_form = Form(cls.env["maintenance.equipment.usage"])
+        equipment_usage_form.equipment_id = cls.equipment
+        equipment_usage_form.user_id = cls.user
         return equipment_usage_form.save()
 
     def test_maintenance_equipment_full_process(self):

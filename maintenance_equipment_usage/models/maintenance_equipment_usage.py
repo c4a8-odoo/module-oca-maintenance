@@ -18,55 +18,39 @@ class MaintenanceEquipmentUsage(models.Model):
         comodel_name="res.users",
         string="User",
         required=True,
-        readonly=True,
-        states={"draft": [("readonly", False)], "reserved": [("readonly", False)]},
         tracking=True,
     )
     picking_user_id = fields.Many2one(
         comodel_name="res.users",
         string="Picked up by",
-        readonly=True,
-        states={"draft": [("readonly", False)], "reserved": [("readonly", False)]},
         tracking=True,
     )
     return_user_id = fields.Many2one(
         comodel_name="res.users",
         string="Returned by",
-        states={
-            "in_use": [("required", True)],
-            "returned": [("readonly", True)],
-            "cancel": [("readonly", True)],
-        },
         tracking=True,
     )
     date_picking = fields.Datetime(
         string="Picking Date",
         copy=False,
         index=True,
-        readonly=True,
-        states={"draft": [("readonly", False)], "reserved": [("readonly", False)]},
         tracking=True,
     )
     date_return = fields.Datetime(
         string="Return Date",
         copy=False,
         index=True,
-        states={"returned": [("readonly", True)], "cancel": [("readonly", True)]},
         tracking=True,
     )
     equipment_id = fields.Many2one(
         comodel_name="maintenance.equipment",
         string="Equipment",
         required=True,
-        readonly=True,
-        states={"draft": [("readonly", False)], "reserved": [("readonly", False)]},
         tracking=True,
     )
     partner_id = fields.Many2one(
         comodel_name="res.partner",
         string="Location",
-        readonly=True,
-        states={"draft": [("readonly", False)], "reserved": [("readonly", False)]},
         tracking=True,
     )
     state = fields.Selection(
@@ -88,8 +72,6 @@ class MaintenanceEquipmentUsage(models.Model):
         required=True,
         index=True,
         default=lambda self: self.env.company.id,
-        readonly=True,
-        states={"draft": [("readonly", False)], "reserved": [("readonly", False)]},
         tracking=True,
     )
     notes = fields.Text()
