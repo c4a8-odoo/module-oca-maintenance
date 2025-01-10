@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-27 10:56+0000\n"
-"PO-Revision-Date: 2024-03-23 09:34+0000\n"
-"Last-Translator: Ivorra78 <informatica@totmaterial.es>\n"
+"PO-Revision-Date: 2025-01-10 10:06+0000\n"
+"Last-Translator: Víctor Martínez <victor.martinez@tecnativa.com>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: maintenance_equipment_usage
 #: model_terms:ir.ui.view,arch_db:maintenance_equipment_usage.hr_equipment_view_form
@@ -24,6 +24,8 @@ msgid ""
 "<span groups=\"maintenance.group_equipment_manager\" class=\"label label-"
 "primary\" invisible=\"not in_use\">In use</span>"
 msgstr ""
+"<span groups=\"maintenance.group_equipment_manager\" class=\"label label-"
+"primary\" invisible=\"not in_use\">En uso</span>"
 
 #. module: maintenance_equipment_usage
 #: model:ir.model.fields,field_description:maintenance_equipment_usage.field_maintenance_equipment_usage__message_needaction
