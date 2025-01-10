@@ -22,10 +22,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:maintenance_equipment_usage.hr_equipment_view_kanban
 msgid ""
 "<span groups=\"maintenance.group_equipment_manager\" class=\"label label-"
-"primary\" attrs=\"{'invisible': [('in_use', '=', False)]}\">In use</span>"
+"primary\" invisible=\"not in_use\">In use</span>"
 msgstr ""
-"<span groups=\"maintenance.group_equipment_manager\" class=\"label label-"
-"primary\" attrs=\"{'invisible': [('in_use', '=', False)]}\">En uso</span>"
 
 #. module: maintenance_equipment_usage
 #: model:ir.model.fields,field_description:maintenance_equipment_usage.field_maintenance_equipment_usage__message_needaction
@@ -187,11 +185,6 @@ msgid "Is Follower"
 msgstr "Es Seguidor"
 
 #. module: maintenance_equipment_usage
-#: model:ir.model.fields,field_description:maintenance_equipment_usage.field_maintenance_equipment_usage____last_update
-msgid "Last Modified on"
-msgstr "Última Modificación el"
-
-#. module: maintenance_equipment_usage
 #: model:ir.model.fields,field_description:maintenance_equipment_usage.field_maintenance_equipment_usage__write_uid
 msgid "Last Updated by"
 msgstr "Modificado por"
@@ -205,11 +198,6 @@ msgstr "Última modificación el"
 #: model:ir.model.fields,field_description:maintenance_equipment_usage.field_maintenance_equipment_usage__partner_id
 msgid "Location"
 msgstr "Ubicación"
-
-#. module: maintenance_equipment_usage
-#: model:ir.model.fields,field_description:maintenance_equipment_usage.field_maintenance_equipment_usage__message_main_attachment_id
-msgid "Main Attachment"
-msgstr "Adjunto Principal"
 
 #. module: maintenance_equipment_usage
 #: model:ir.model,name:maintenance_equipment_usage.model_maintenance_equipment
@@ -316,6 +304,11 @@ msgid "Picking Month"
 msgstr "Mes de recogida"
 
 #. module: maintenance_equipment_usage
+#: model:ir.model.fields,field_description:maintenance_equipment_usage.field_maintenance_equipment_usage__rating_ids
+msgid "Ratings"
+msgstr ""
+
+#. module: maintenance_equipment_usage
 #: model:ir.model.fields.selection,name:maintenance_equipment_usage.selection__maintenance_equipment_usage__state__reserved
 msgid "Reserved"
 msgstr "Reservado"
@@ -405,3 +398,16 @@ msgstr "Mensajes del Sitio Web"
 #: model:ir.model.fields,help:maintenance_equipment_usage.field_maintenance_equipment_usage__website_message_ids
 msgid "Website communication history"
 msgstr "Historial de la comunicación en el sitio web"
+
+#~ msgid ""
+#~ "<span groups=\"maintenance.group_equipment_manager\" class=\"label label-"
+#~ "primary\" attrs=\"{'invisible': [('in_use', '=', False)]}\">In use</span>"
+#~ msgstr ""
+#~ "<span groups=\"maintenance.group_equipment_manager\" class=\"label label-"
+#~ "primary\" attrs=\"{'invisible': [('in_use', '=', False)]}\">En uso</span>"
+
+#~ msgid "Last Modified on"
+#~ msgstr "Última Modificación el"
+
+#~ msgid "Main Attachment"
+#~ msgstr "Adjunto Principal"
