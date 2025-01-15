@@ -21,13 +21,13 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[base_maintenance](base_maintenance/) | 17.0.1.0.0 |  | Base Maintenance
+[base_maintenance](base_maintenance/) | 17.0.1.1.0 |  | Base Maintenance
 [maintenance_account](maintenance_account/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Maintenance Account
 [maintenance_equipment_hierarchy](maintenance_equipment_hierarchy/) | 17.0.1.0.0 | [![dalonsod](https://github.com/dalonsod.png?size=30px)](https://github.com/dalonsod) | Manage equipment hierarchy
 [maintenance_equipment_sequence](maintenance_equipment_sequence/) | 17.0.1.0.1 | [![AdriaGForgeFlow](https://github.com/AdriaGForgeFlow.png?size=30px)](https://github.com/AdriaGForgeFlow) | Adds sequence to maintenance equipment defined in the equipment's category
 [maintenance_equipment_status](maintenance_equipment_status/) | 17.0.1.0.0 |  | Maintenance Equipment Status
 [maintenance_equipment_usage](maintenance_equipment_usage/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Maintenance Equipment Usage
-[maintenance_plan](maintenance_plan/) | 17.0.1.0.0 |  | Extends preventive maintenance planning
+[maintenance_plan](maintenance_plan/) | 17.0.1.1.0 |  | Extends preventive maintenance planning
 [maintenance_product](maintenance_product/) | 17.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Maintenance Product
 [maintenance_project](maintenance_project/) | 17.0.2.0.0 |  | Adds projects to maintenance equipments and requests
 [maintenance_timesheet](maintenance_timesheet/) | 17.0.1.0.1 |  | Adds timesheets to maintenance requests
